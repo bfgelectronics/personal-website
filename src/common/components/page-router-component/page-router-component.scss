@@ -1,0 +1,14 @@
+.c-navbar {
+  &__page-wrapper {
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-height: 1080px) {
+  .c-navbar {
+    &__page-wrapper {
+      margin-top: calc((100vh - 1080px) / 2 + 40px);
+    }
+  }
+}

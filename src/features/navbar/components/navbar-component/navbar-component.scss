@@ -1,0 +1,51 @@
+.c-navbar {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &-wraper {
+    width: 60px;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    display: flex;
+  }
+
+  &__element-icon {
+    margin: auto;
+    font-size: 40px;
+  }
+
+  &__element {
+    height: 120px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    display: flex;
+    transition: 0.2s;
+
+    &.active {
+      background-color: var(--main-text-color);
+      color: var(--main-bg-color);
+    }
+
+    &--primary {
+      clip-path: polygon(0% 25%, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
+    }
+
+    &--up {
+      margin-bottom: -31px;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 50% 75%, 0% 100%, 0% 25%);
+    }
+
+    &--down {
+      margin-top: -31px;
+      clip-path: polygon(0% 0%, 50% 25%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+    }
+  }
+
+  &__element:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+  }
+}
